@@ -6,12 +6,18 @@ body {
   max-width: 90%;
 }
 
+.sublinks {
+  height: 0;
+  overflow: hidden;
+  transform: translateY();
+  transition: all 0.3s;
+  padding-bottom: 0;
+}
+
 .links {
   height: 0;
   overflow: hidden;
   background-color: #433b47;
-  transform: translateY();
-  transition: all 0.3s;
 }
 
 .links li {
@@ -24,7 +30,6 @@ body {
 }
 
 .links li i {
-  display: inline-block;
   font-size: 10px;
   background-color: red;
   padding: 2px;
@@ -32,6 +37,7 @@ body {
 }
 
 .links .red {
+  display: block;
   background-color: red;
   width: 100;
   overflow: visible;
@@ -50,7 +56,6 @@ body {
 
 .show-links {
   height: auto;
-  padding-bottom: 20px;
 }
 
 nav {
@@ -96,4 +101,12 @@ nav {
   align-self: center;
   height: 32px;
   padding-left: 15px;
+}
+
+ul {
+  margin: 0;
+}
+
+li .fas {
+  align-self: right;
 }
