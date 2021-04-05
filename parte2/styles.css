@@ -2,47 +2,41 @@ body {
   margin: 0;
 }
 
+nav {
+  background-color: #18131f;
+  color: #eaeadf;
+  max-width: 360px;
+}
+
+ul {
+  margin: 0;
+}
+
 .container {
   max-width: 90%;
 }
 
 .sublinks {
   height: 0;
+  margin-left: -15px;
   overflow: hidden;
   padding-bottom: 0;
-  margin-left: -15px;
 }
 
 .links {
+  background-color: #433b47;
   height: 0;
   overflow: hidden;
-  background-color: #433b47;
 }
 
 .links li {
-  font-size: 12px;
+  border-bottom: 1px solid #e8e8e8;
   font-family: 'Open Sans', sans;
+  font-size: 12px;
   font-weight: 700;
   list-style-type: none;
   margin-left: 20px;
   padding: 15px;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.links li i {
-  font-size: 10px;
-  background-color: red;
-  padding: 2px;
-  border-radius: 5px;
-}
-
-.links .red {
-  display: block;
-  background-color: red;
-  width: 100;
-  overflow: visible;
-  border-bottom: 1px solid red;
-  margin-left: 0px;
 }
 
 .links li:hover {
@@ -50,18 +44,29 @@ body {
   cursor: pointer;
 }
 
+.links li i {
+  background-color: red;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 2px;
+}
+
+.links .red {
+  background-color: red;
+  border-bottom: 1px solid red;
+  display: block;
+  margin-left: 0px;
+  overflow: visible;
+  width: 100;
+}
+
 .logo {
   align-self: center;
 }
 
-.show-links {
-  height: auto;
-}
-
-nav {
-  background-color: #18131f;
-  color: #eaeadf;
-  max-width: 360px;
+.nav-center {
+  display: flex;
+  width: 100%;
 }
 
 .nav-header {
@@ -70,31 +75,26 @@ nav {
   width: 100%;
 }
 
-.nav-center {
-  display: flex;
-  width: 100%;
+.nav-header i {
+  font-size: 32px;
+  padding: 13px;
 }
 
 .nav-toggle {
   align-self: center;
   background-color: #18131f;
+  border: 0 none;
   color: #eaeadf;
   cursor: pointer;
   font-size: 32px;
-  outline: none;
-  border: 0 none;
   height: 60px;
-  width: 60px;
+  outline: none;
   padding: 0;
+  width: 60px;
 }
 
 .nav-toggle:hover {
   color: white;
-}
-
-.nav-header i {
-  padding: 13px;
-  font-size: 32px;
 }
 
 .social {
@@ -103,8 +103,8 @@ nav {
   padding-left: 15px;
 }
 
-ul {
-  margin: 0;
+.show-links {
+  height: auto;
 }
 
 li .fas {
