@@ -9,9 +9,8 @@ body {
 .sublinks {
   height: 0;
   overflow: hidden;
-  transform: translateY();
-  transition: all 0.3s;
   padding-bottom: 0;
+  margin-left: -15px;
 }
 
 .links {
@@ -25,6 +24,7 @@ body {
   font-family: 'Open Sans', sans;
   font-weight: 700;
   list-style-type: none;
+  margin-left: 20px;
   padding: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
