@@ -1,21 +1,18 @@
-const modal = document.createElement("div");
-Object.assign(modal, {
-  className: 'modal micromodal-slide is-open position-relative',
-  }
-)
+const body = document.querySelector('body');
+const modal = document.createElement('div');
+const overlay = document.createElement('div');
+const content = document.createElement('div');
+const img = document.createElement('img');
 
-const img = document.createElement("img");
+Object.assign(modal, {className: 'modal micromodal-slide is-open'});
+Object.assign(overlay, {className: 'modal__overlay'})
+Object.assign(content, {className: 'position-relative'})
 Object.assign(img, {
   className: 'form-modal',
   src: 'https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-1.png'
 })
 
-const overlay = document.createElement("div");
-Object.assign(overlay, {
-  className: 'modal__overlay',
-})
-
-const container = document.querySelector(".header-conversion-form-whatsapp-modal");
-container.appendChild(modal);
+content.appendChild(img);
+overlay.append(content);
 modal.appendChild(overlay);
-modal.appendChild(img);
+body.append(modal);
