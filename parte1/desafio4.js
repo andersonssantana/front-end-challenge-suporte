@@ -13,6 +13,6 @@ Object.assign(img, {
 })
 
 content.appendChild(img);
-overlay.append(content);
+overlay.appendChild(content);
 modal.appendChild(overlay);
-body.append(modal);
+body.appendChild(modal);

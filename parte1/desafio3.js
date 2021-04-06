@@ -17,7 +17,7 @@ optionsSelect.map(option => {
   })
   selectCars.add(clickableOption);
 })
-formulario.append(selectCars);
+formulario.appendChild(selectCars);
 
 const textArea = document.createElement('textarea');
 Object.assign(textArea, {
@@ -25,4 +25,4 @@ Object.assign(textArea, {
   placeholder: 'Mensagem'
 });
 
-formulario.append(textArea);
+formulario.appendChild(textArea);
