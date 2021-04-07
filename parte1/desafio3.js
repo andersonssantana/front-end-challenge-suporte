@@ -1,4 +1,4 @@
-const formulario = document.querySelector('form#conversion-from-new-model')[0];
+const formulario = document.querySelector('.form-conversion__body > fieldset');
 const selectCars = document.createElement('select');
 Object.assign(selectCars, {className: 'choices__list choices__list--single'});
 
@@ -17,12 +17,17 @@ optionsSelect.map(option => {
   })
   selectCars.add(clickableOption);
 })
-formulario.appendChild(selectCars);
+const divSelectCars = document.createElement('div');
+Object.assign(divSelectCars, {className: 'form-group'});
+divSelectCars.appendChild(selectCars);
+formulario.appendChild(divSelectCars);
 
 const textArea = document.createElement('textarea');
 Object.assign(textArea, {
   className: 'form-control',
   placeholder: 'Mensagem'
 });
-
-formulario.appendChild(textArea);
+const divTextArea  = document.createElement('div');
+Object.assign(divTextArea, {className: 'form-group'});
+divTextArea.appendChild(textArea);
+formulario.appendChild(divTextArea);
